@@ -2,9 +2,51 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Ứng dụng máy tính </title>
 </head>
 <body>
+<form>
+    <input type="text" id="s1">&nbsp;
+    <input type="text"id="s2"><br>
+    <button onclick="addtion()">Addtion(+)</button>&nbsp;
+    <button onclick="subtraction()">Subtraction(-)</button>&nbsp;
+    <button onclick="Mutiplication">Mutiplicatiom(+)</button>&nbsp;
+    <button onclick="division()" >Division(+)</button>
+    <script>
+        function addtion ()
+        {
+            let input1 = +document.getElementById('s1').value;
+            let input2 = +document.getElementById('s2').value;
+            let output1= input1+input2;
+            alert(output1);
+
+
+        }
+        function subtraction()
+        {
+                let input1 = +document.getElementById('s1').value;
+                let input2 = +document.getElementById('s2').value;
+                let output2= input1-input2;
+                alert(output2);
+
+
+        }
+        function Mutiplication ()
+        {
+            let input1 = +document.getElementById('s1').value;
+            let input2 = +document.getElementById('s2').value;
+            let output3 = input1 * input2;
+            alert(output3);
+        }
+        function division() {
+            let input1 = +document.getElementById('s1').value;
+            let input2 = +document.getElementById('s2').value;
+            let output4 = input1 / input2;
+            alert(output4);
+        }
+    </script>
+
+</form>
 
 </body>
 </html>
