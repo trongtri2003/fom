@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển đổi tiền tệ</title>
+</head>
+<body>
+<form>
+    <tr>
+        <td>Amount</td>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <td>From Currency</td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <td>To Currency</td>
+
+        <br>
+    </tr>
+    <tr>
+        <input type="text" id="s">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <select id="s1">
+            <option>VND</option>
+            <option>USD</option>
+        </select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <select id="s2">
+            <option>USD</option>
+            <option>VND</option>
+        </select>
+    </tr>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button style="background: blue; color: white" onclick="tinh()">Convert</button>
+    <script>
+        function tinh()
+        {
+            let input = document.getElementById('s').value;
+            let select1 = document.getElementById('s1').value;
+            let select2 = document.getElementById('s2').value;
+            if (select1 == select2)
+            {
+                alert(input);
+            }
+            if (select1 == "VND"&& select2=="USD")
+                {
+                    let output1= input/23000;
+                    alert(output1);
+                }
+            if  (select1=="USD" && select2=="VND")
+            {
+                let output2= input*23000;
+                alert(output2);
+            }
+
+
+        }
+    </script>
+
+
+
+</form>
+
+</body>
+</html>
+
