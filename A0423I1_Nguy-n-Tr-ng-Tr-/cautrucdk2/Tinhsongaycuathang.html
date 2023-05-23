@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tinh so ngay cua thang</title>
+</head>
+<body>
+<form>
+    <input type="text" id="s">
+    <button onclick=" tinh() ">Tinh so ngay</button>
+</form>
+<script >
+    function tinh() {
+
+         let value = parseInt(prompt(document.getElementById('s').innerText));
+         switch (value ) {
+             case '1':
+             case '3':
+             case '5':
+             case '7':
+             case '8':
+             case '10'
+             case '12':
+             document.write('Thang co 31 ngay');
+             break;
+             case '4':
+             case '6':
+             case '9':
+                 alert('thang co 30 ngay');
+             default:
+                 alert('Thang 2 co 28 ngay');
+
+
+         }
+
+
+
+        }
+
+    }
+
+</script>
+</body>
+</html>
