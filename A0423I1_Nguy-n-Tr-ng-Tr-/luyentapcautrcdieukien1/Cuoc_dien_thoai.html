@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tinh cuoc dien thoai</title>
+</head>
+<body>
+
+<script>
+    let thoi_gian_su_dung = parseInt(prompt("Thoi gian ban su dung dien thoai trong thang nay"));
+    if (thoi_gian_su_dung < 0) {
+        alert('Khong hop le.')
+    } else {
+
+        if (thoi_gian_su_dung > 0 && thoi_gian_su_dung <= 500) {
+            alert('Cuoc dien thoai thang nay cua ban la :' + thoi_gian_su_dung * 50)
+        } else if (thoi_gian_su_dung > 100 && thoi_gian_su_dung <= 500) {
+            alert('Cuoc dien thoai thang nay cua ban la :' + thoi_gian_su_dung * 100)
+        } else if (thoi_gian_su_dung > 500 && thoi_gian_su_dung <= 1000) {
+            alert('Cuoc dien thoai thang nay cua ban la :' + thoi_gian_su_dung * 200);
+        } else if (thoi_gian_su_dung > 1000 && thoi_gian_su_dung <= 1500) {
+            alert('Cuoc dien thoai thang nay cua ban la :' + thoi_gian_su_dung * 500);
+        } else {
+            alert('cuoc dien thoai cua ban la;' + thoi_gian_su_dung * 1000)
+        }
+
+
+    }
+
+</script>
+
+</body>
+</html>

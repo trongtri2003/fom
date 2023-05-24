@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xep hang hoc sinh</title>
+</head>
+<body>
+<script>
+    let diem_kiem_tra = parseInt(prompt('Diem kiem tra:'));
+    let diem_giua_ki = parseInt(prompt('Diem giua ki:'));
+    let diem_cuoi_ki = parseInt(prompt('diem thi cuoi ki:'))
+    let diem_trung_binh = (diem_kiem_tra + diem_giua_ki*2 + diem_cuoi_ki*3)/6;
+    if (diem_trung_binh >= 8 )
+    {
+        alert('Ban dat loai gioi.')
+    }
+    else if ( diem_trung_binh>=6,5 && diem_trung_binh<8)
+    {
+        alert('Ban dat loai kha:')
+    }
+    else if (diem_trung_binh< 6,5 &&diem_trung_binh >=5)
+    {
+        alert('Ban dat loai trung binh.')
+    }
+    else
+    {
+       alert('ban dat loai yeu.')
+    }
+</script>
+
+</body>
+</html>

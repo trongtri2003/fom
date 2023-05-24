@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tien hoa hong</title>
+</head>
+<body>
+<script>
+    let doanh_thu = parseInt(prompt('Doanh thu cua ban thang nay la:'));
+    let hoa_hong ;
+    if ( doanh_thu> 10000000)
+    {
+        hoa_hong= doanh_thu*5/100;
+        alert(hoa_hong);
+    }
+    else if (doanh_thu>= 7000000&& doanh_thu< 10000000)
+    {
+        hoa_hong = doanh_thu*3/100;
+        alert(hoa_hong);
+    }
+    else if (doanh_thu >=5000000 && doanh_thu <7000000)
+    {
+        hoa_hong= doanh_thu * 1/100;
+        alert(hoa_hong);
+    }
+    else
+    {
+        alert('Ban chua dat chi tieu.')
+    }
+</script>
+
+</body>
+</html>
