@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thuế Thu nhập cá nhân </title>
+</head>
+<body>
+<script>
+    let thu_nhap = parseInt(prompt("Thu nhap hang thang cua ban:"))
+    let tien_thue;
+    if (thu_nhap > 0)
+    {
+        if (thu_nhap > 0 && thu_nhap < 5000000)
+        {
+            tien_thue = thu_nhap * 5 / 100;
+            alert(tien_thue);
+        } else if (thu_nhap >= 5000000 && thu_nhap < 10000000)
+        {
+            tien_thue = thu_nhap * 7 / 100;
+            alert(tien_thue);
+        } else if (thu_nhap >= 10000000 && thu_nhap < 15000000)
+        {
+            tien_thue = thu_nhap * 10 / 100;
+            alert(tien_thue);
+        } else if (thu_nhap >= 15000000 && thu_nhap < 20000000)
+        {
+            tien_thue = thu_nhap * 12 / 100;
+            alert(tien_thue);
+        } else if (thu_nhap > 20000000 && thu_nhap < 25000000)
+        {
+            tien_thue = thu_nhap * 15 / 100;
+            alert(tien_thue);
+        } else {
+            tien_thue = thu_nhap * 20 / 100;
+            alert(tien_thue)
+        }
+
+    }
+    else
+    {
+        alert('So ban nhap khong hop le.')
+    }
+
+</script>
+
+</body>
+</html>
