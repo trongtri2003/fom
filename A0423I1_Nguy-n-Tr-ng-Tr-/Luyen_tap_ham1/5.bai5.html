@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="timngoisao()" >Click Me</button>
+
+<script>
+    let array1= ['Polaris', 'Aldebaran', 'Deneb','Vega', 'Altair', 'Dubhe' ,'Regulus']
+    let array2 = ['Ursa Minor','Tarurus','Cygnus','Lyra', 'Aquila', 'Ursa Major' ,'Leo']
+   function timngoisao() {
+       let star = prompt('Moi nhap ten ngoi sao:')
+       for (let i in array1){
+           if (array1[i]=== star){
+               alert(array2[i])
+               return
+           }
+
+       }
+       alert('Khong tim thay ngoi sao nao')
+
+
+   }
+</script>
+
+</body>
+</html>
