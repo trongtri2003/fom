@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form >
+    <input>
+    <input type="button" value="search" onclick="search()">
+    <p id="2"></p>
+</form>
+<script>
+function search()
+{
+    let array1 = ["english", "math", "history","hello","bye" ];
+    let array2=["tieng anh","toán","lịch sủ", "xin chao","tạm biet"];
+    let a = document.querySelector('input').value;
+    for (let i = 0; i < array1.length; i++ ){
+        if (a == array1[i]){
+            document.getElementById('2').innerHTML= array2[i];
+            return;
+        }
+        else {
+            document.getElementById('2').innerHTML='khong tim thay'
+        }
+    }
+
+
+}
+
+
+</script>
+
+</body>
+</html>
